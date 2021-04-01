@@ -14,8 +14,9 @@ mongoose.connection.on("error", (err) => {
 });
 
 require("./models/user");
-
+require("./models/expenses");
 const authroutes = require("./routes/auth");
+const expensesRoutes = require("./routes/expense");
 const app = express();
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
@@ -26,15 +27,12 @@ app.use((req, res, next) => {
   if (req.method === "OPTIONS") {
     res.header("Access-Control-Allow-Methods", "PUT, POST, PATCH, DELETE");
     return res.status(200).json({});
-  } 
+  }
   next();
 });
 app.use(express.json());
 app.use(authroutes);
-
-app.get("/signup", (req, res) => {
-  res.send({ ok: "ök" });
-});
+app.use(expensesRoutes);
 
 app.listen(3000, () => {
   console.log(" hello from 3000");
