@@ -1,0 +1,22 @@
+{
+  "name": "xpensy",
+  "version": "1.0.0",
+  "description": "A node api for xpensy app ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Xpensy",
+    "expenses",
+    "tracker"
+  ],
+  "author": "Bibhu kiju",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.2"
+  }
+}
