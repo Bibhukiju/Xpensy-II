@@ -2,6 +2,8 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const { MONGOURI } = require("./config/keys");
+const PORT = process.env.PORT || 3000
+
 mongoose.connect(MONGOURI, {
   useUnifiedTopology: true,
   useNewUrlParser: true,
@@ -40,6 +42,6 @@ app.get("/test", (req, res) => {
     return res.send("you need to login");
   }
 });
-app.listen(3000, () => {
+app.listen(PORT, () => {
   console.log(" hello from 3000");
 });
