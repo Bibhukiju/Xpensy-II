@@ -21,10 +21,9 @@ an expenses tracking app based on node js and html css for web and flutter for a
 ---
 ---
 # Frontend
----
 
 ---
-# Mobile app
+# <span style="color:yellow">**Mobile app**</span>.
 ---
 - [x] Signup
 - [x] Login

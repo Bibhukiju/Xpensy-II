@@ -9,7 +9,7 @@
 # Getting Start 
 For the frontend contributer of this (Xpensy-II) project . Follow these steps
 1. Clone this Project repo
-1. Goto Techedu/frontend folder Then you will see
+1. Goto xpensy-ii/frontend folder Then you will see
 
 ```bash
     Frontend
@@ -26,12 +26,17 @@ For the frontend contributer of this (Xpensy-II) project . Follow these steps
     
 ```
 
-1. Only work on Public Directory
+⚠️WARNING⚠️
 
-Note: - This read me files chages in time so keep  checking and 
+      1. Only work on Public Directory
 
 
-# Routes for developer
+🔴IMPORTANT❗🔴
+    
+    This read me files chages in time so keep  checking and 
+
+
+# <span style="color="red">**Routes for developer**</span>
 
 ## Signup (user registration)
 
