@@ -1,10 +1,15 @@
 const express = require("express");
 const router = express.Router();
 const mongoose = require("mongoose");
+const bcrypt = require("bcryptjs");
 require("../models/user");
 const User = mongoose.model("User");
 const jwt = require("jsonwebtoken");
 const { SECRET } = require("../config/keys");
+
+router.get("/home", (req, res) => {
+  res.send({ msg: "working" });
+});
 
 router.post("/signup", async (req, res) => {
   const { name, email, password } = req.body;
