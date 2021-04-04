@@ -36,7 +36,7 @@ For the frontend contributer of this (Xpensy-II) project . Follow these steps
     This read me files chages in time so keep  checking and 
 
 
-# <span style="color="red">**Routes for developer**</span>
+# <span style="color:blue">**Routes for developer**</span>
 
 ## Signup (user registration)
 
