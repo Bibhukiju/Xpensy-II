@@ -27,7 +27,6 @@ router.post("/add", requirelogin, async (req, res) => {
 
 // * Read
 router.get("/", requirelogin, async (req, res) => {
-  console.log(req);
   const myPost = await Expenses.find({ postedBy: req.user._id }).populate(
     "postedBy",
     "_id name"
