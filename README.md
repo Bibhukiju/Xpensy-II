@@ -34,5 +34,5 @@ an expenses tracking app based on node js and html css for web and flutter for a
 - [ ] delete expenses
 ---
 ## Documentation
-[Documentation](../Xpensy-II/APIDOC.MD) for api implementation
+[Documentation](./APIDOC.MD) for api implementation
 
