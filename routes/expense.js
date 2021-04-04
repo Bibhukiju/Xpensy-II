@@ -52,7 +52,7 @@ router.patch("/update/:id", requirelogin, async (req, res) => {
 });
 
 // * delete
-router.delete("/expenses/:id", async (req, res) => {
+router.delete("/delete/:id", async (req, res) => {
   try {
     const test = await Expenses.findOne({ _id: req.params.id });
     console.log(test);

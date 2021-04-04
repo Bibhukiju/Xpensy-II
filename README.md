@@ -28,4 +28,11 @@ an expenses tracking app based on node js and html css for web and flutter for a
 ---
 - [x] Signup
 - [x] Login
+- [ ] DashBoard
+- [ ] add Expenses
+- [ ] update Expenses
+- [ ] delete expenses
+---
+## Documentation
+[Documentation](../Xpensy-II/APIDOC.MD) for api implementation
 
