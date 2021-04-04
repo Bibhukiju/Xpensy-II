@@ -5,6 +5,7 @@ const { MONGOURI } = require("./config/keys");
 mongoose.connect(MONGOURI, {
   useUnifiedTopology: true,
   useNewUrlParser: true,
+  useFindAndModify:true
 });
 mongoose.connection.on("connected", () => {
   console.log("mongoose connected");
@@ -33,7 +34,12 @@ app.use((req, res, next) => {
 app.use(express.json());
 app.use(authroutes);
 app.use(expensesRoutes);
-
+app.get("/test", (req, res) => {
+  if (!req.headers.authorization) {
+    console.log(req.headers.authorization);
+    return res.send("you need to login");
+  }
+});
 app.listen(3000, () => {
   console.log(" hello from 3000");
 });
