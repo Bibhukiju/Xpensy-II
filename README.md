@@ -4,6 +4,8 @@ an expenses tracking app based on node js and html css for web and flutter for a
 ---
 # Todo
 ---
+# Backend
+---
 ## User
 - [x] Signup
 - [x] Login
@@ -15,3 +17,15 @@ an expenses tracking app based on node js and html css for web and flutter for a
 - [x] Get All Expenses
 - [x] Update existing Expenses
 - [x] Delete Existing Expenses
+
+---
+---
+# Frontend
+---
+
+---
+# Mobile app
+---
+- [x] Signup
+- [x] Login
+
