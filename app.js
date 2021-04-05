@@ -2,12 +2,12 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const { MONGOURI } = require("./config/keys");
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3000;
 
 mongoose.connect(MONGOURI, {
   useUnifiedTopology: true,
   useNewUrlParser: true,
-  useFindAndModify:true
+  useFindAndModify: true,
 });
 mongoose.connection.on("connected", () => {
   console.log("mongoose connected");
@@ -36,12 +36,7 @@ app.use((req, res, next) => {
 app.use(express.json());
 app.use(authroutes);
 app.use(expensesRoutes);
-app.get("/test", (req, res) => {
-  if (!req.headers.authorization) {
-    console.log(req.headers.authorization);
-    return res.send("you need to login");
-  }
-});
+
 app.listen(PORT, () => {
   console.log(" hello from 3000");
 });
