@@ -1,15 +1,12 @@
-const express = require("express");
-const router = express.Router();
-const mongoose = require("mongoose");
-const bcrypt = require("bcryptjs");
 require("../models/user");
-const User = mongoose.model("User");
+const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
+const express = require("express");
+const mongoose = require("mongoose");
+const User = mongoose.model("User");
 const { SECRET } = require("../config/keys");
-
-router.get("/home", (req, res) => {
-  res.send({ msg: "working" });
-});
+const router = express.Router();
+// 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
 
 router.post("/signup", async (req, res) => {
   const { name, email, password } = req.body;
@@ -43,7 +40,7 @@ router.post("/signin", async (req, res) => {
   if (!savedUser) {
     return res.status(422).send({ msg: "Invalid credentials" });
   }
-  bcrypt.compare(password, hashedPassword, (err, doMatch) => {
+  bcrypt.compare(password, savedUser.password, (err, doMatch) => {
     if (doMatch) {
       const token = jwt.sign({ _id: savedUser._id }, SECRET);
       res.send({ token });
