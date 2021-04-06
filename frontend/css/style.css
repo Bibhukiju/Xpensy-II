@@ -26,11 +26,11 @@
   background-color: teal;
   z-index: 1000;
   width: 45%;
-  height: 90%;
+  height: 60%;
   /* clip-path: polygon(0 0, 100% 0px, 82% 100%, 0 100%); */
   /* background-color: grey; */
 
-  background-image: url("/frontend/assets/about.svg");
+  background-image: url("/frontend/assets/undraw_bitcoin2_ave7.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size:contain;
@@ -103,7 +103,7 @@ box-shadow:  5px 5px 14px #bdbdbd,
   width: 80%;
   background-color: #ffffff;
 }
-#fname {
+.fname {
   align-content: center;
   width: 80%;
   margin: 0 auto;
@@ -127,7 +127,7 @@ box-shadow:  5px 5px 14px #bdbdbd,
   margin-top: 40px;
   height: 35px;
 }
-#lname {
+.lname {
   height: 35px;
   border: none;
   /* border: 1px solid grey; */
@@ -160,8 +160,8 @@ a{
   display: block;
   width: 80%;
   margin: 0 auto;
-  height: 2.2em;
-  margin-top: 1.8em;
+  height: 3.2em;
+  margin-top: 2em;
 }
 .btn:hover{
     background-color: white;
