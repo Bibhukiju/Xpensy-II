@@ -2,7 +2,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const { MONGOURI } = require("./config/keys");
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 
 mongoose.connect(MONGOURI, {
   useUnifiedTopology: true,
@@ -38,5 +38,5 @@ app.use(authroutes);
 app.use(expensesRoutes);
 
 app.listen(PORT, () => {
-  console.log(" hello from 3000");
+  console.log("hello from 3000");
 });
